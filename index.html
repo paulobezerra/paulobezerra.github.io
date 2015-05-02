@@ -1,1 +1,85 @@
-Vai que é sua Taffareeeeeel
+<!DOCTYPE html>
+<html ng-app="meuSite">
+    <head>
+        <meta charset="utf-8">
+        <title>Paulo Bezerra - Desenvolvimento Web</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" type="image/ico" href="favicon.ico">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top visible-xs visible-sm">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sidebar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-header">
+                    <a class="navbar-brand text-info" href="#/">
+                        <span class="text-primary">PAULO BEZERRA</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <aside id="sidebar" class="collapse navbar-collapse">
+            <header id="apresentacao" class="hidden-xs hidden-sm text-center">
+                <br>
+                <img src="imgs/paulo_bezerra_valentina.jpg" alt="Paulo Bezerra" class="img-rounded img-responsive"/>
+                <h1 class="text-primary">Paulo Bezerra <small>Desenvolvedor Web</small> </h1>
+            </header>
+            <hr>
+            <nav>
+                <ul class="nav nav-pills nav-stacked">
+                    <li><a href="#/" class="text-muted">
+                            <span class="fa fa-home fa-2x text-primary"></span> Home</a>
+                    </li>
+                    <li><a href="#/sobre" class="text-muted">
+                            <span class="fa fa-user fa-2x text-danger"></span> Sobre</a>
+                    </li>
+                </ul>
+                <br>
+                <hr>
+                <div class="redes-sociais text-center">
+                    <a href="https://github.com/paulobezerra" title="GitHub" target="_blank">
+                        <span class="fa fa-github fa-2x text-muted"></span></a>
+                    &nbsp;
+                    <a href="https://www.linkedin.com/pub/paulo-roberto-sampaio-bezerra/20/898/337" title="LinkedIn" target="_blank">
+                        <span class="fa fa-linkedin-square fa-2x text-primary"></span></a>
+                    &nbsp;
+                    <a href="http://pt.slideshare.net/paulorsbezerra" title="Slideshare" target="_blank">
+                        <span class="fa fa-slideshare fa-2x text-warning"></span></a>
+                    &nbsp;
+                    <a href="mailto:bezerra.paulo@gmail.com" title="Gmail">
+                        <span class="fa fa-envelope fa-2x text-danger"></span></a>
+                </div>
+            </nav>
+        </aside>
+
+        <section id="conteudo" ng-view>
+
+        </section>
+
+        <footer id="rodape" class="text-center">
+            Paulo Bezerra - Copyright <i class="fa fa-copyright"></i> 2015
+        </footer>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/animate.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-route.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-cookies.min.js"></script>
+
+        <script src="app/app.js"></script> 
+        <script src="app/controllers/HomeController.js"></script>
+        <script src="app/controllers/PostController.js"></script>
+        <script src="app/directives/PostDirective.js"></script>
+
+        <script src="js/facebook.js"></script>
+    </body>
+</html>

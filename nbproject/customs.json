@@ -1,0 +1,12 @@
+{
+    "elements": {
+        "post": {
+            "attributes": {
+                "resumido": {},
+                "postdata": {},
+                "post-data": {}
+            }
+        }
+    },
+    "attributes": {}
+}

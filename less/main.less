@@ -1,0 +1,164 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01/05/2015, 09:08:47
+    Author     : paulo
+*/
+
+@import "bootstrap/bootstrap.less";
+
+@font-size-base:          13px;
+
+html, body{
+    height: 100%;
+}
+
+hr{
+    margin: 0 0 10px;
+}
+
+.navbar-toggle {
+    float: left;
+}
+
+.navbar-collapse{
+    border-top: none;
+}
+.embed-responsive{
+    margin-bottom: 10px;
+}
+
+#sidebar{
+    background-color: @gray-base;
+    color: @gray-light;
+    position: fixed;
+    top: 51px; 
+    bottom: 30px;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 5000;
+    width: 45%;   
+
+    @media (min-width: @screen-sm-min){
+        top: 0; 
+    }
+
+    @media (min-width: @screen-md-min){
+        width: 25%;
+    }
+
+    @media (min-width: @screen-lg-min){
+        width: 20%;
+    }
+}
+
+#conteudo{
+    box-sizing: border-box;
+    @media (min-width: @screen-md-min){
+        margin-left: 25%;
+        width: 75%;
+    }
+
+    @media (min-width: @screen-lg-min){
+        margin-left: 20%;
+        width: 80%;
+    }
+    .posts{
+        padding-bottom: 30px;
+    }
+
+    .single-post{
+        box-sizing: border-box;
+        cursor: pointer;
+        margin-top: 10px;
+        padding-bottom: 50px;
+
+        .post-img-bg{
+            z-index: -50;
+            position: absolute;
+            top:10px;
+            left:5px;
+            bottom: 0;
+            right:5px;
+            background-position: center;
+            opacity: 0.10;
+        }
+        .post-borda{
+            z-index: -25;
+            position: absolute;
+            top:10px;
+            left:5px;
+            bottom: 0;
+            right:5px;
+            border: 1px solid darken(@brand-primary, 10%);
+            border-radius: 2px; 
+            box-shadow: 2px 2px 1px @gray-dark;
+        }
+        .post-texto{
+            font-size: 16px; 
+        }
+        .post-data{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .post-titulo{
+            font-weight: bold;
+        }
+        .leia-mais{
+            position: absolute; 
+            bottom: 0;
+            right:15px;
+            text-align: right;
+        }
+    }
+    @media(min-width: @screen-md-min){
+        .single-post{
+            height: 250;
+        }
+        .post-data{
+            height: 247px;
+        }
+        .single-post:hover{ 
+            .post-borda{
+                opacity: 1;
+                background-image: none !important;
+                background-color: lighten(@gray-base, 80%);
+                border-radius: 3px; 
+            }
+            .post-titulo{
+                font-size: 38px;
+            }
+            .post-texto{
+                display: none;
+            }
+        } 
+    }
+    .post-completo{
+        text-align: justify;
+        font-size: 14px;
+        line-height: 1.8em
+    }
+}
+
+#rodape{
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 5px;
+    height: 30px;
+    background-color: @gray-base;
+    color: @gray-light;
+    width: 100%;
+}
+
+#conteudo{
+    height: 100%;
+}
+
+.fb-dark{
+    background-color: @gray-light; 
+}

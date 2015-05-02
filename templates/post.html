@@ -1,0 +1,30 @@
+<article class="post" ng-if="!resumido">
+    <header>
+        <h2 class="col-xs-12">{{postData.titulo}}</h2>
+        <div class="post-info">
+            <hr>
+            <p class="col-xs-6 small"><strong>Autor:</strong> {{postData.autor}}</p>
+            <p class="col-xs-6 text-right small"><strong>Atualizado em:</strong> {{postData.data}}</p>
+            <hr>
+        </div>
+        <div class="col-xs-12"><hr></div>
+    </header>
+    <div class="col-xs-12">
+        <div class="post-completo"><div ng-include="postData.arquivo"></div></div>
+        <hr>
+    </div>
+</article>
+
+<article class="single-post" ng-if="resumido">
+    <div ng-show="postData.bgUrl" class="post-img-bg hidden-sm hidden-xs" 
+         style="background-image: url('{{postData.bgUrl}}')"></div>
+    <div ng-hide="postData.bgUrl" class="post-img-bg hidden-sm hidden-xs" 
+         style="background-image: url('imgs/post_bg.jpg')"></div>
+    <div class="post-borda"></div>
+    <div class="post-data">
+        <header>
+            <h3 class="post-titulo text-danger text-uppercase">{{postData.titulo}}</h3>
+        </header>
+        <div class="post-texto"><div ng-include="postData.arquivo"></div></div>
+    </div>
+</article>
