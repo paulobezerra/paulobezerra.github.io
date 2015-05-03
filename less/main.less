@@ -19,16 +19,54 @@ html, body{
 hr{
     margin: 0 0 10px;
 }
-
-.navbar-toggle {
-    float: left;
-}
-
-.navbar-collapse{
-    border-top: none;
-}
 .embed-responsive{
     margin-bottom: 10px;
+}
+
+.sidebar-toggle {
+    position: relative;
+    float: left;
+    margin-right: @navbar-padding-horizontal;
+    padding: 9px 10px;
+    .navbar-vertical-align(34px);
+    background-color: transparent;
+    background-image: none; 
+    border: 1px solid transparent;
+    border-radius: @border-radius-base;
+
+    &:focus {
+        outline: 0;
+    }
+
+    .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+    }
+    .icon-bar + .icon-bar {
+        margin-top: 4px;
+    }
+
+    border-color: @navbar-default-toggle-border-color;
+    &:hover,
+        &:focus {
+        background-color: @navbar-default-toggle-hover-bg;
+    }
+    .icon-bar {
+        background-color: @navbar-default-toggle-icon-bar-bg;
+    }
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: @navbar-inverse-toggle-border-color;
+    &:hover,
+        &:focus {
+        background-color: @navbar-inverse-toggle-hover-bg;
+    }
+    .icon-bar {
+        background-color: @navbar-inverse-toggle-icon-bar-bg;
+    }
 }
 
 #sidebar{
@@ -41,12 +79,20 @@ hr{
     box-sizing: border-box;
     z-index: 5000;
     width: 45%;   
+    padding: 10px;
+    header{
+        text-align: center;
+        img{
+            text-align: center;
+        }
+    }
 
     @media (min-width: @screen-sm-min){
         top: 0; 
     }
 
     @media (min-width: @screen-md-min){
+        display: block;
         width: 25%;
     }
 
@@ -70,11 +116,12 @@ hr{
         padding-bottom: 30px;
     }
 
-    .single-post{
+    .post{
         box-sizing: border-box;
         cursor: pointer;
         margin-top: 10px;
         padding-bottom: 50px;
+        height: 200px;
 
         .post-img-bg{
             z-index: -50;
@@ -107,21 +154,31 @@ hr{
         .post-titulo{
             font-weight: bold;
         }
-        .leia-mais{
-            position: absolute; 
-            bottom: 0;
-            right:15px;
-            text-align: right;
-        }
+
     }
+    .posts, .single-post{
+        margin-bottom: 60px;
+    }
+
+    @media(max-width: @screen-sm-max){
+        .posts, .single-post{
+            margin-top: 60px;
+        }
+        .post{
+            .post-borda{
+                display: none;
+            }
+        }
+    }        
+
     @media(min-width: @screen-md-min){
-        .single-post{
-            height: 250;
+        .post{
+            height: 250px;
         }
         .post-data{
             height: 247px;
         }
-        .single-post:hover{ 
+        .post:hover{ 
             .post-borda{
                 opacity: 1;
                 background-image: none !important;
@@ -136,23 +193,41 @@ hr{
             }
         } 
     }
-    .post-completo{
-        text-align: justify;
-        font-size: 14px;
-        line-height: 1.8em
+
+    .single-post{
+        h2{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .post-completo{
+            text-align: justify;
+            font-size: 16px;
+            line-height: 1.8em
+        }
+    }
+
+    h4{
+        font-weight: bolder;
+        font-size: 20px;
     }
 }
 
 #rodape{
-    z-index: 1000;
+    z-index: 9999;
     position: fixed;
     bottom: 0;
     box-sizing: border-box;
     padding: 5px;
-    height: 30px;
+    min-height: 30px;
     background-color: @gray-base;
     color: @gray-light;
     width: 100%;
+    
+    @media(max-width: @screen-sm-max){
+        .copyright{
+            text-align: center;
+        }
+    }
 }
 
 #conteudo{

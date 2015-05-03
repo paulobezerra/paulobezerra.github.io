@@ -1,8 +1,17 @@
 [
     {
+        "url": "helo_world",
+        "titulo": "Helo World!",
+        "autor": "Paulo Bezerra",
+        "data": "03/05/2015",
+        "arquivo": "posts/post20150503_helo_word.html"
+    },
+    {
+        "url": "single_page_apps_com_angularjs",
         "titulo": "Single Page Apps com AngularJS",
         "autor": "Paulo Bezerra",
         "data": "02/05/2015",
-        "arquivo": "posts/post20150502_spa_angularjs.html"
+        "arquivo": "posts/post20150502_spa_angularjs.html",
+        "bgUrl" : "http://flisol.info/Logo?action=AttachFile&do=get&target=FLISoL-2015.png"
     }
 ]

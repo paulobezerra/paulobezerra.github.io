@@ -6,6 +6,20 @@
                 "postdata": {},
                 "post-data": {}
             }
+        },
+        "slideshare": {
+            "attributes": {
+                "url_perfil": {},
+                "titulo": {},
+                "url_download": {},
+                "nomePerfil": {},
+                "url_apresentacao": {}
+            }
+        },
+        "facebook_comment": {
+            "attributes": {
+                "url": {}
+            }
         }
     },
     "attributes": {}

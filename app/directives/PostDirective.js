@@ -5,7 +5,7 @@ angular.module("meuSite").directive('post', [function () {
                 postData:'=postData',
                 resumido:'=resumido'
             },
-            templateUrl: 'templates/post.html'
+            templateUrl: 'app/view/templates/post.html'
         };
     }]);
 

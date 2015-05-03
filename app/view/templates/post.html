@@ -1,4 +1,4 @@
-<article class="post" ng-if="!resumido">
+<article class="single-post" ng-if="!resumido">
     <header>
         <h2 class="col-xs-12">{{postData.titulo}}</h2>
         <div class="post-info">
@@ -15,7 +15,7 @@
     </div>
 </article>
 
-<article class="single-post" ng-if="resumido">
+<article class="post" ng-if="resumido">
     <div ng-show="postData.bgUrl" class="post-img-bg hidden-sm hidden-xs" 
          style="background-image: url('{{postData.bgUrl}}')"></div>
     <div ng-hide="postData.bgUrl" class="post-img-bg hidden-sm hidden-xs" 
