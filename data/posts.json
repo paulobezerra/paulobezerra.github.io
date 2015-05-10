@@ -2,6 +2,7 @@
     {
         "url": "helo_world",
         "titulo": "Helo World!",
+        "resumo":"Este é meu novo blog criado com AngularJS e Bootstrap hospedado no GitHub.",
         "autor": "Paulo Bezerra",
         "data": "03/05/2015",
         "arquivo": "posts/post20150503_helo_word.html"
@@ -9,6 +10,7 @@
     {
         "url": "single_page_apps_com_angularjs",
         "titulo": "Single Page Apps com AngularJS",
+        "resumo" : "Slides da palesta sobre Single Page Apps com AngularJS que eu apresentei no Flisol 2015.",
         "autor": "Paulo Bezerra",
         "data": "02/05/2015",
         "arquivo": "posts/post20150502_spa_angularjs.html",

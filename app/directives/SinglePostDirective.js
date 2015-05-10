@@ -1,10 +1,10 @@
-angular.module("meuSite").directive('post', [function () {
+angular.module("meuSite").directive('singlePost', [function () {
         return {
             restrict: 'E',
             scope: {
                 postData:'=postData',
             },
-            templateUrl: 'app/view/templates/post.html'
+            templateUrl: 'app/view/templates/single-post.html'
         };
     }]);
 

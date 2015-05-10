@@ -10,13 +10,13 @@
 
 	// Add the ignore rules that Koala will not search them.
 	// e.g. ["*.json", "*.txt", "test", "path/libs"]
-	"ignores": ["*.css", "/less/bootstrap"],
+	"ignores": ["*.css", "/less/bootstrap", "/less/font-awesome"],
 
 	// Compile options of LESS.
 	"options": {
 
 		// Output style. Can be normal (default), compress.
-		"outputStyle": "normal",
+		"outputStyle": "compress",
 
 		// Outputs filename and line numbers, which will output the debug info within comments.
 		"lineComments": false,

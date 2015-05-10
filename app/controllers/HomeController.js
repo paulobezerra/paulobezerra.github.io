@@ -7,6 +7,7 @@ angular.module('meuSite')
                         
                         $scope.irParaPost = function(post){
                             window.sessionStorage.setItem('post', JSON.stringify(post));
-                            $location.path('/post/'+post.url);
+                            $location.path('post/'+post.url);
+                            window.fbAsyncInit();
                         };
             }]);

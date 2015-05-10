@@ -1,0 +1,16 @@
+<article class="single-post">
+    <header>
+        <h2 class="col-xs-12">{{postData.titulo}}</h2>
+        <div class="post-info">
+            <hr>
+            <p class="col-xs-6 small"><strong>Autor:</strong> {{postData.autor}}</p>
+            <p class="col-xs-6 text-right small"><strong>Atualizado em:</strong> {{postData.data}}</p>
+            <hr>
+        </div>
+        <div class="col-xs-12"><hr></div>
+    </header>
+    <div class="col-xs-12">
+        <div class="post-completo"><div ng-include="postData.arquivo"></div></div>
+        <hr>
+    </div>
+</article>
