@@ -15,5 +15,13 @@
         "data": "02/05/2015",
         "arquivo": "posts/post20150502_spa_angularjs.html",
         "bgUrl" : "http://flisol.info/Logo?action=AttachFile&do=get&target=FLISoL-2015.png"
+    },
+    {
+        "url": "instalacao_yeoman",
+        "titulo": "Passos para instalaçã do YEOMAN.",
+        "resumo":"Aqui descrevo os passos para executar um projeto que tenha sido criado com YEOMAN.",
+        "autor": "Paulo Bezerra",
+        "data": "14/05/2015",
+        "arquivo": "posts/post20150515_instalacao_yeoman.html"
     }
 ]

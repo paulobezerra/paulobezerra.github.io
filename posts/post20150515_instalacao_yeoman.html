@@ -1,0 +1,30 @@
+<p>
+    Para que eu não fique mais sofrendo na hora de instalar o YEOMAN em uma nova máquina para rodar um projeto já existente segue os somandos a serem execultados no Ubuntu:
+</p>
+<pre>
+# sudo apt-get install nodejs nodejs-legancy npm git
+# sudo npm install -g yo
+# sudo npm install -g grunt
+# sudo npm install -g grunt-cli
+# sudo npm install -g bower
+</pre>
+<p>
+	Então na pasta do projeto deve-se dar os seguintes comandos:
+</p>
+<pre>
+$ npm install
+$ bower install
+$ grunt serve
+</pre>
+<p>
+	Caso de erro de Maximum call stack size exceeded digite o seguinte comando:
+</p>
+<pre>
+$ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+</pre>
+<p>
+	Caso de erro ao executar o <q>bower install</q> não terminando de bixar as dependencias, execute o seguinte comando.
+</p>
+<pre>
+$ git config --global url."https://".insteadOf "git://"
+</pre>
